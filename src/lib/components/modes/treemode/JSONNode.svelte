@@ -772,7 +772,7 @@
                 {#if Object.keys(value).length>0}
                 {Object.keys(value)[0]}
                 :
-                {value[Object.keys(value)[0]].toString().length<30?value[Object.keys(value)[0]]:value[Object.keys(value)[0]].toString().slice(0,30)}
+                {value[Object.keys(value)[0]].toString().length<30?value[Object.keys(value)[0]]:value[Object.keys(value)[0]].toString().slice(0,30)+"..."}
                 {:else}
                 undefined
                 {/if}
