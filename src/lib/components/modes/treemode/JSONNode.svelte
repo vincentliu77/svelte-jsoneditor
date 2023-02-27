@@ -769,8 +769,13 @@
             {:else}
               <div class="jse-bracket">&lbrace;</div>
               <button type="button" class="jse-tag" on:click={handleExpand}>
-                {Object.keys(value).length}
-                {Object.keys(value).length === 1 ? 'prop' : 'props'}
+                {#if Object.keys(value).length>0}
+                {Object.keys(value)[0]}
+                :
+                {value[Object.keys(value)[0]].toString().length<30?value[Object.keys(value)[0]]:value[Object.keys(value)[0]].toString().slice(0,30)}
+                {:else}
+                undefined
+                {/if}
               </button>
               <div class="jse-bracket">&rbrace;</div>
             {/if}
