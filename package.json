@@ -42,7 +42,6 @@
     "lint:prettier": "prettier --check --plugin-search-dir=. .",
     "lint:eslint": "eslint --cache --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. .",
-    "build:component": "rollup -c build/rollup.config.js",
     "prepare": "husky install && cd tools && node generateDiffSequenceEsm.js && cd ..&&(yarn build:component || npm run build:component)",
     "release": "npm-run-all release:**",
     "release:lint": "npm run lint",
