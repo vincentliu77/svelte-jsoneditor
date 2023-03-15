@@ -1,5 +1,5 @@
 {
-  "name": "svelte-jsoneditor",
+  "name": "@vincentliu77/svelte-jsoneditor",
   "description": "A web-based tool to view, edit, format, transform, and validate JSON",
   "version": "0.16.0",
   "homepage": "https://jsoneditoronline.org",
